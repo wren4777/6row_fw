@@ -1,4 +1,4 @@
-/*Copyright 2019 coseyfannitutti
+/*Copyright 2020 wren4777
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -21,13 +21,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID       0x6B62
 #define PRODUCT_ID      0x6869
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    coseyfannitutti
-#define PRODUCT         DISCIPLINE
-#define DESCRIPTION     65% keyboard that can be assembled with only through hole components
+#define MANUFACTURER    wren4777
+#define PRODUCT         6ROW
+#define DESCRIPTION     A through-hole only USB controller for 6-row Lenovo ThinkPad keyboards
 
 /* key matrix size */
-#define MATRIX_ROWS 5
-#define MATRIX_COLS 15
+#define MATRIX_ROWS 9
+#define MATRIX_COLS 19
 
 /*
  * Keyboard Matrix Assignments
@@ -40,8 +40,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
 
-#define MATRIX_ROW_PINS { B2, A1, B1, A0, B0 }
-#define MATRIX_COL_PINS { A2, B3, A3, B4, A4, D5, D6, C6, C5, C4, C3, C2, C1, C0, D7 }
+#define MATRIX_ROW_PINS { A2, A3, A4, A5, A6, A7, B1, B2, B0 }
+#define MATRIX_COL_PINS { D7, D6, D5, D3, D1, D0, C7, C6, C5, C4, C3, C2, C1, C0, B7, B6, B5, B4, B3 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
@@ -89,9 +89,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* number of backlight levels */
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
-#define LOCKING_SUPPORT_ENABLE
+//  #define LOCKING_SUPPORT_ENABLE
 /* Locking resynchronize hack */
-#define LOCKING_RESYNC_ENABLE
+//  #define LOCKING_RESYNC_ENABLE
 
 /* If defined, GRAVE_ESC will always act as ESC when CTRL is held.
  * This is userful for the Windows task manager shortcut (ctrl+shift+esc).
@@ -214,6 +214,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define MIDI_TONE_KEYCODE_OCTAVES 1
 
 /* Bootmagic Lite key configuration */
-#define BOOTMAGIC_LITE_ROW 0
-#define BOOTMAGIC_LITE_COLUMN 0
+#define BOOTMAGIC_LITE_ROW 8
+#define BOOTMAGIC_LITE_COLUMN 12
 
